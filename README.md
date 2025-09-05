@@ -4,7 +4,7 @@ In this project, we will create a simple REST API, built with **Express.js** and
 
 The server is powered by **Express.js**, while the data is stored in a **MySQL** database. 
 
-**Step 1: Setup Database**
+**Step 1: Setup Database**  
 Create a new database in MySQL named **lab_crud**. Inside it, create the table:
 1. `students (id, name, age, course, created_at)`
 2. `courses (id, code, title, units, created_at)`
@@ -12,10 +12,11 @@ Create a new database in MySQL named **lab_crud**. Inside it, create the table:
 
 Verify the table using phpMyAdmin or MySQL CLI.
 
-**Step 2: Build the Server**
-Setup an Express.js server connected to MySQL. Configure your .env file with MySQL credentials. If successful, the terminal should display: `🚀 Server running… and ✅ MySQL connected.`
+**Step 2: Build the Server**  
+Setup an Express.js server connected to MySQL. Configure your .env file with MySQL credentials. If successful, the terminal should display:   
+`🚀 Server running… and ✅ MySQL connected.`
 
-**Step 3: Create Controllers**
+**Step 3: Create Controllers**  
 Following clean project structure, build two controllers:
 1. `studentController.js` - CRUD operations for students
 2. `courseController.js` - CRUD operations for courses
@@ -27,14 +28,14 @@ Each controller must support all five operations:
 4. Update (PUT)
 5. Delete (DELETE)
 
-**Step 4: Define Routes**
+**Step 4: Define Routes**  
 Create separate route files:
 - `studentRoutes.js` mounted under /api/students
 - `coursesRoutes.js` mounted under /api/courses
 
 Update server.js to include both routes.
 
-**Step 5: Test in Postman**
+**Step 5: Test in Postman**  
 Perform a full CRUD cycle for **students and courses:**
 - `POST /api/students` → Add a student
 - `GET /api/students` → View all students
@@ -47,9 +48,9 @@ Perform a full CRUD cycle for **students and courses:**
 - `PUT /api/coursess/:id` → Update a course
 - `DELETE /api/courses/:id` → Remove a course
 
-Use Postman environment with **{{baseUrl}} for easier testing. 
+Use Postman environment with **{{baseUrl}}** for easier testing. 
 
-**Step 6: Push to GitHub**
+**Step 6: Push to GitHub**  
 1. Initialize Git (if not already):
    
    git init
